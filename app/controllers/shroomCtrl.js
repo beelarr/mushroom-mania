@@ -7,13 +7,13 @@ app.controller('ShroomCtrl', function ($scope, ShroomFactory) {
         .then(function (shroomCollection) {
             for (var key in shroomCollection){
                 console.log('key', shroomCollection[key]);
-                $scope.mushroom.push(shroomCollection[key])
+                $scope.mushroom.push(shroomCollection[key]);
             }
-            $scope.mushrooms = shroomCollection;
-            console.log('shrooms from Ctrl', $scope.mushrooms);
+            // console.log('shrooms from Ctrl', $scope.mushrooms);
             console.log('shroomArray', $scope.mushroom);
         });
-        $scope.filterMushrooms = $scope.mushroom.filter((shroom)=>{
-            return shroom.name
-        });
+
+        // $scope.filterMushrooms = $scope.mushroom.filter((shroom)=>{
+        //     return shroom.name;
+        // });
 });

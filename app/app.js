@@ -1,6 +1,6 @@
 "use strict";
 
-var app = angular.module('ShroomApp', ['ngRoute', 'angular-toArrayFilter']
+var app = angular.module('ShroomApp', ['ngRoute']
 )
     .config(function ($routeProvider) {
         $routeProvider

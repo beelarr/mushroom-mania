@@ -7,6 +7,9 @@
 <body ng-app="ShroomApp">
 
     <h1>It's Shroom Mania Time!!!!</h1>
+    <label>Search: <input ng-model="searchText"><br/><br/></label>
+
+    <label>
     <div ng-include="'partials/navbar.html'"></div>
     <div ng-include="'partials/greeting.html'"></div>
     <div ng-view></div>

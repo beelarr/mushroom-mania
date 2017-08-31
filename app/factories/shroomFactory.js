@@ -9,7 +9,9 @@ app.factory('ShroomFactory', function ($q, $http) {
                 .then((itemObject) =>{
                 console.log('itemObject', itemObject.data);
                 let shroomCollection = itemObject.data;
+                console.log('shroomCollection', shroomCollection);
                 resolve(shroomCollection);
+
                 })
                 .catch((error)=>{
                 reject(error);
