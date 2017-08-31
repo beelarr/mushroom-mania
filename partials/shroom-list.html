@@ -1,11 +1,10 @@
 <article class="product-list">
-<header>
-    <h1>List of Shrooms</h1>
-</header>
-<section>
-    <div ng-repeat="shroom in mushrooms | toArray:true | filter:searchText">
-        <a href="#/{{shroom.name}}">{{shroom.name}}</a>
-    </div>
-
-</section>
+    <header>
+        <h1>List of Shrooms</h1>
+    </header>
+    <section>
+        <div ng-repeat="shroom in mushroom | filter: {name:searchText}">
+            <a href="#/{{shroom.name}}">{{shroom.name}}</a>
+        </div>
+    </section>
 </article>
