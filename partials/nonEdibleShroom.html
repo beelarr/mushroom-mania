@@ -1,6 +1,6 @@
 <section>
     <h2> Non-Edible Shrooms</h2>
-    <div ng-repeat="shroom in mushrooms | toArray:true | filter:searchText">
+    <div ng-repeat="shroom in mushrooms | filter: {name:searchText, edible:isEdible}">
         <div ng-show="{{!shroom.edible}}">
             <a href="#/{{shroom.name}}">{{shroom.name}}</a>
             <p>{{shroom.description}}</p>
